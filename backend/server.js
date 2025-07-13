@@ -1,10 +1,14 @@
 import dotenv from "dotenv";
 import express from "express";
 import { sql } from "./config/db.js";
+import ratelimiter from "./middleware/rateLimiter.js";
 
 dotenv.config();
 
 const app = express();
+
+//middleware
+app.use(ratelimiter);
 
 app.use(express.json())
 
