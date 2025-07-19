@@ -1,0 +1,181 @@
+import { StyleSheet } from "react-native";
+import { COLORS } from "../../constants/colors";
+
+export const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: COLORS.background,
+    padding: 20,
+    justifyContent: "center",
+  },
+  illustration: {
+    
+    marginBottom: 16,
+    resizeMode: "contain",
+    alignSelf: "center",
+  },
+  title: {
+    fontSize: 32,
+    fontWeight: "bold",
+    color: COLORS.text,
+    marginVertical: 15,
+    textAlign: "center",
+    marginBottom: 24,
+  },
+  inputWrapper: {
+    flexDirection: "row",
+    alignItems: "center",
+    backgroundColor: "#f2f5f7",
+    borderRadius: 12,
+    paddingHorizontal: 12,
+    paddingVertical: 10,
+    marginBottom: 14,
+    width: "100%",
+  },
+  input: {
+    backgroundColor: COLORS.white,
+    borderRadius: 12,
+    padding: 15,
+    marginBottom: 16,
+    borderWidth: 1,
+    borderColor: COLORS.border,
+    fontSize: 16,
+    color: COLORS.text,
+  },
+  errorInput: {
+    borderColor: COLORS.expense,
+  },
+  button: {
+    backgroundColor: "#4F46E5",
+    borderRadius: 12,
+    padding: 16,
+    alignItems: "center",
+    marginTop: 10,
+    marginBottom: 20,
+  },
+  button1: {
+    backgroundColor: "#4F46E5",
+    borderRadius: 15,
+    padding: 16,
+    alignItems: "center",
+    position: 'absolute',
+    bottom: '40',
+    width:"70%"
+  },
+  buttonText: {
+    color: COLORS.white,
+    fontSize: 16,
+    fontWeight: "600",
+    letterSpacing: 0.5
+  },
+  footerContainer: {
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+    gap: 8,
+  },
+  footerText: {
+    color: COLORS.text,
+    fontSize: 16,
+  },
+  linkText: {
+    color: COLORS.primary,
+    fontSize: 16,
+    fontWeight: "600",
+  },
+  verificationContainer: {
+    flex: 1,
+    backgroundColor: COLORS.background,
+    padding: 20,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  verificationTitle: {
+    fontSize: 28,
+    fontWeight: "bold",
+    color: COLORS.text,
+    marginBottom: 25,
+    textAlign: "center",
+  },
+  verificationImage: {
+    width: 200,
+    height: 150,
+    marginBottom: 20,
+    alignSelf: "center",
+  },  
+  verificationInput: {
+    backgroundColor: COLORS.white,
+    borderRadius: 12,
+    padding: 15,
+    marginBottom: 16,
+    borderWidth: 1.5,
+    borderColor: COLORS.border,
+    fontSize: 16,
+    color: COLORS.text,
+    width: "100%",
+    textAlign: "center",
+    letterSpacing: 2,
+  },
+  buttonDisabled: {
+    backgroundColor: "#C8E6C9",
+    opacity: 0.6,
+  },
+  verificationSubTitle: {
+    fontSize: 20,
+    fontWeight: '600',
+    textAlign: 'center',
+    color: COLORS.primary,
+    marginTop: 12,
+    marginBottom: 5,
+  },
+  verificationInfo: {
+    fontSize: 14,
+    textAlign: 'center',
+    color: COLORS.text,
+    marginBottom: 24,
+  },
+  codeInputContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginVertical: 16,
+    width: '80%',
+    alignSelf: 'center',
+    position: 'relative',
+  },
+  
+  codeBox: {
+    width: 60,
+    height: 60,
+    borderWidth: 1,
+    borderRadius: 8,
+    borderColor: COLORS.border || '#ccc',
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#fff',
+  },
+  hiddenInput: {
+    position: 'absolute',
+    width: '100%',
+    height: '100%',
+    opacity: 0,
+  },
+
+  // Error styles
+  errorBox: {
+    backgroundColor: "#FFE5E5",
+    padding: 12,
+    borderRadius: 8,
+    borderLeftWidth: 4,
+    borderLeftColor: COLORS.expense,
+    marginBottom: 16,
+    flexDirection: "row",
+    alignItems: "center",
+    width: "100%",
+  },
+  errorText: {
+    color: COLORS.text,
+    marginLeft: 8,
+    flex: 1,
+    fontSize: 14,
+  },
+});
